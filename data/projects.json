@@ -1,0 +1,23 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Night at Museum",
+    "date": "2025 (In Progress)",
+    "description": "Visitor Studies Research Project at Melbourne Museum exploring how night programs affect visitor experience. Conducting field research through structured observation and interviews to analyze visitor behavior during after-hours programming.",
+    "status": "in_progress"
+  },
+  {
+    "id": "proj-2",
+    "title": "Sensitive Being Exhibition",
+    "date": "August 2025 (Upcoming)",
+    "description": "Co-curating a group exhibition exploring sensory and emotional experience, featuring artists from Australia, China, Argentina, and the U.S. Responsible for artist open call, venue arrangements, and display planning.",
+    "status": "upcoming"
+  },
+  {
+    "id": "proj-3",
+    "title": "Creative Collective Series",
+    "date": "September 2024 - Present",
+    "description": "Leading recurring community workshops on home gallery curation, collaborative art-making, and art therapy. Built a diverse cultural exchange community of 200+ members.",
+    "status": "ongoing"
+  }
+]

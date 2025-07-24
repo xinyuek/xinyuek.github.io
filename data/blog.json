@@ -1,0 +1,80 @@
+[
+  {
+    "id": "blog-1",
+    "title": "Curation as a Way of Life: Bringing Art into Everyday Spaces",
+    "date": "Coming Soon",
+    "category": "Curatorial Practice",
+    "readTime": "5 min read",
+    "excerpt": "Exploring how curatorial practices can extend beyond traditional gallery spaces and into our homes, communities, and daily interactions. This post reflects on my Creative Collective workshop series and the philosophy behind making art accessible in domestic environments.",
+    "image": "images/curation-as-lifestyle.jpg",
+    "tags": ["Curation", "Community", "Home Gallery"],
+    "featured": true,
+    "published": false,
+    "content": ""
+  },
+  {
+    "id": "blog-2",
+    "title": "After Hours: What Night Programs Reveal About Visitor Behavior",
+    "date": "Coming Soon",
+    "category": "Research",
+    "readTime": "7 min read",
+    "excerpt": "Insights from my ongoing visitor studies research at Melbourne Museum, examining how after-hours programming creates different social dynamics and visitor engagement patterns compared to daytime visits.",
+    "image": "images/night-museum-insights.jpg",
+    "tags": ["Visitor Studies", "Museum", "Research"],
+    "featured": false,
+    "published": false,
+    "content": ""
+  },
+  {
+    "id": "blog-3",
+    "title": "Building Bridges: Cross-Cultural Collaboration in Contemporary Art",
+    "date": "Coming Soon",
+    "category": "Cultural Exchange",
+    "readTime": "6 min read",
+    "excerpt": "Reflections on curating \"Sensitive Being\" with artists from four different countries, and the unique challenges and opportunities that arise when bringing together diverse cultural perspectives in a single exhibition.",
+    "image": "images/cross-cultural-collaboration.jpg",
+    "tags": ["International", "Collaboration", "Cultural Exchange"],
+    "featured": false,
+    "published": false,
+    "content": ""
+  },
+  {
+    "id": "blog-4",
+    "title": "Creating Safe Spaces: Art Therapy and Community Building",
+    "date": "Coming Soon",
+    "category": "Community",
+    "readTime": "4 min read",
+    "excerpt": "How art-making workshops can serve as platforms for cultural exchange, emotional healing, and community building among international students and local communities in Melbourne.",
+    "image": "images/community-workshops.jpg",
+    "tags": ["Art Therapy", "Community", "Workshops"],
+    "featured": false,
+    "published": false,
+    "content": ""
+  },
+  {
+    "id": "blog-5",
+    "title": "The Future of Art Documentation: Digital Archiving Best Practices",
+    "date": "Coming Soon",
+    "category": "Technology",
+    "readTime": "5 min read",
+    "excerpt": "Lessons learned from working on ISEA International's digital archiving project, including metadata standardization, automation tools, and the importance of preserving digital art and conference materials for future researchers.",
+    "image": "images/digital-archiving.jpg",
+    "tags": ["Digital Archiving", "Technology", "Documentation"],
+    "featured": false,
+    "published": false,
+    "content": ""
+  },
+  {
+    "id": "blog-6",
+    "title": "Navigating Melbourne's Arts Ecosystem as an International Student",
+    "date": "Coming Soon",
+    "category": "Local Scene",
+    "readTime": "6 min read",
+    "excerpt": "Personal reflections on building connections within Melbourne's vibrant arts community, from gallery openings to artist studios, and finding one's place as a curator in a new cultural context.",
+    "image": "images/melbourne-arts-scene.jpg",
+    "tags": ["Melbourne", "Arts Community", "Personal"],
+    "featured": false,
+    "published": false,
+    "content": ""
+  }
+]

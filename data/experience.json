@@ -1,0 +1,20 @@
+[
+  {
+    "id": "exp-1",
+    "position": "Archive Assistant",
+    "company": "ISEA International",
+    "location": "Remote",
+    "period": "Nov 2024 - Present",
+    "description": "Digitizing materials from the 2024 ISEA conference and exhibitions using standardized metadata systems. Developed Python tools to automate data processing and enhance archival efficiency.",
+    "current": true
+  },
+  {
+    "id": "exp-2",
+    "position": "Curatorial Assistant",
+    "company": "TeamLab Art Gallery",
+    "location": "Shanghai, China",
+    "period": "Jan 2023 - Jun 2023",
+    "description": "Provided customer service and supported merchandise sales. Produced handmade art badges, managed inventory, and arranged product displays to maintain an organized retail space.",
+    "current": false
+  }
+]

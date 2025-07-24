@@ -1,0 +1,32 @@
+{
+  "name": "Xinyue (Anita) Kang",
+  "title": "Curator | Researcher | Community Builder",
+  "emoji": "🌙",
+  "heroDescription": "Welcome to my personal website. I'm a passionate curator and researcher currently pursuing my Master of Arts in Curatorship at the University of Melbourne. I specialize in exhibition planning, visitor studies, and community-engaged arts programming.",
+  "aboutParagraphs": [
+    "I am currently pursuing my Master of Arts in Curatorship at the University of Melbourne, building upon my foundation in Product Design from Hubei University of Technology. My passion lies in creating meaningful connections between art, communities, and audiences through innovative curatorial practices.",
+    "My work spans from visitor studies research to community workshop facilitation, always with a focus on understanding how people interact with art and cultural experiences. I believe in \"curation as a way of life,\" exploring how artistic practices can be integrated into everyday spaces and communities.",
+    "Based in Melbourne, I'm actively involved in the local arts scene while maintaining international collaborations, working with artists from Australia, China, Argentina, and the United States."
+  ],
+  "skills": [
+    "Exhibition Planning",
+    "Curatorial Writing",
+    "Visitor Studies",
+    "Community Engagement",
+    "Project Coordination",
+    "Adobe Creative Suite",
+    "Research Methods",
+    "Event Management"
+  ],
+  "contact": {
+    "email": "xinyue.kk@outlook.com",
+    "phone": "(61) 483224271",
+    "linkedin": "https://linkedin.com/in/anita-kang-9816852ab/",
+    "location": "Melbourne, VIC, Australia"
+  },
+  "profileImage": "images/profile-photo.jpg",
+  "cvFiles": {
+    "english": "cv_pdf/CV_Anita_Kang_EN.pdf",
+    "chinese": "cv_pdf/CV_Anita_kang_ZH.pdf"
+  }
+}

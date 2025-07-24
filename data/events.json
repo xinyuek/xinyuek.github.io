@@ -1,0 +1,43 @@
+[
+  {
+    "id": "event-1",
+    "title": "Sensitive Being Exhibition",
+    "date": "August 2025",
+    "location": "Melbourne, Australia",
+    "description": "Co-curating a cross-media group exhibition exploring \"emotional experience\" featuring 10 artists from four countries (Australia, China, Argentina, and the U.S.). The exhibition emphasizes the interaction between sensory perception and emotions, incorporating installations, video art, paintings, and other media.",
+    "image": "images/sensitive-being-exhibition.jpg",
+    "status": "upcoming",
+    "tags": ["Curatorial", "International", "Group Exhibition"],
+    "highlights": []
+  },
+  {
+    "id": "event-2",
+    "title": "Creative Collective Workshop Series",
+    "date": "September 2024 - Present",
+    "location": "Melbourne, Australia",
+    "description": "Initiated and leading a recurring series of community workshops based on \"curation as a way of life.\" Inviting local Chinese and international students to explore creative potential in home spaces. Topics include home gallery experiments, improvisational creation, and language healing.",
+    "image": "images/creative-collective.jpg",
+    "status": "current",
+    "tags": ["Community Engagement", "Workshop", "Art Therapy"],
+    "highlights": [
+      "15-25 participants per session",
+      "Built a community of 200+ diverse cultural exchange members",
+      "Topics: Home gallery curation, collaborative art-making, art therapy"
+    ]
+  },
+  {
+    "id": "event-3",
+    "title": "Night at Museum - Visitor Studies Research",
+    "date": "March 2025 - Present",
+    "location": "Melbourne Museum, Australia",
+    "description": "Conducting field research through structured observation and interviews at Melbourne Museum to analyze the impact of night exhibition activities on visitor behavior and experience. Research focuses on space usage and visitor behavior, creating interaction data-based visitor behavior maps.",
+    "image": "images/night-museum.jpg",
+    "status": "research",
+    "tags": ["Research", "Visitor Studies", "Museum Studies"],
+    "highlights": [
+      "Comparative day-night visitor behavior analysis",
+      "Found night visitors prefer interactive installations and social activities",
+      "Provided optimization suggestions for exhibition planning and display design"
+    ]
+  }
+]
