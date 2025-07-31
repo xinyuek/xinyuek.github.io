@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "27255770452d70f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1c6cb98ac59ed96",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae1e6e3c67930aa2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "内容更新指南.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "内容更新指南"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2c56eacfcef7e38e",
+    "type": "split",
+    "children": [
+      {
+        "id": "17c7d7b262f83b4d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86fa264989b5b2b1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "c81508a935bce3f0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "a398f430df94409b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a5deba41fa17cf5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f88bca9a730ab69",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53c9466649810b8a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "内容更新指南.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "内容更新指南 的反向链接列表"
+            }
+          },
+          {
+            "id": "08d45721fa9be958",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "内容更新指南.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "内容更新指南 的出链列表"
+            }
+          },
+          {
+            "id": "4f665fb7a1e1d85c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "13a572c708c77cf3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "内容更新指南.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "内容更新指南 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "ae1e6e3c67930aa2",
+  "lastOpenFiles": [
+    "images/ws-dog.jpg",
+    "images/workshop-dog.jpg",
+    "images/ex-tea.jpg",
+    "images/re-night.png",
+    "images/profile-photo.jpg",
+    "images/profile_photo.jpg",
+    "images/ex_tea.jpg",
+    "images/Tea.jpg",
+    "images/workshop.jpg",
+    "images/Tea Exhibition.jpg",
+    "images/workshop.jpeg",
+    "data backup 0731/personal.json",
+    "data backup 0731/projects.json",
+    "data backup 0731/experience.json",
+    "data backup 0731/events.json",
+    "data backup 0731/blog.json",
+    "data backup 0731",
+    "data copy/blog.json",
+    "data copy/personal.json",
+    "data copy/projects.json",
+    "data copy/experience.json"
+  ]
+}
