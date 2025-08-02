@@ -1429,6 +1429,15 @@ footer p {
     font-style: italic;
 }
 
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
 .read-more.disabled {
     color: #bdc3c7;
     cursor: not-allowed;

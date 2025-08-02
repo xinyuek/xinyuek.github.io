@@ -52,19 +52,26 @@ class ContentLoader {
     parseMarkdown(markdown) {
         let html = markdown;
         
+        // Images - must be processed before paragraphs
+        html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" class="blog-image">');
+        
         // Headers
         html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
         html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
         html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+        html = html.replace(/^#### (.*$)/gim, '<h4>$1</h4>');
         
         // Bold and italic
         html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
         html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
         
+        // Links
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+        
         // Paragraphs (split by double newlines)
         html = html.split('\n\n').map(paragraph => {
             paragraph = paragraph.trim();
-            if (paragraph.startsWith('<h') || paragraph === '') {
+            if (paragraph.startsWith('<h') || paragraph.startsWith('<img') || paragraph === '') {
                 return paragraph;
             }
             return `<p>${paragraph.replace(/\n/g, ' ')}</p>`;
@@ -288,13 +295,22 @@ class ContentLoader {
     }
 
     loadBlogPage() {
-        if (!this.blogData) return;
+        if (!this.blogData) {
+            console.log('No blog data available');
+            return;
+        }
+
+        console.log('Blog data loaded:', this.blogData);
 
         const blogContainer = document.getElementById('blog-container');
-        if (!blogContainer) return;
+        if (!blogContainer) {
+            console.log('Blog container not found');
+            return;
+        }
 
         // Filter only published posts
         const publishedPosts = this.blogData.filter(post => post.published);
+        console.log('Published posts:', publishedPosts);
 
         blogContainer.innerHTML = publishedPosts
             .map(post => `
