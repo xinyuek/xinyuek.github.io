@@ -1,16 +1,16 @@
 [
   {
     "id": "blog-1",
-    "title": "Curation as a Way of Life: Bringing Art into Everyday Spaces",
-    "date": "Coming Soon",
-    "category": "Curatorial Practice",
-    "readTime": "5 min read",
-    "excerpt": "Exploring how curatorial practices can extend beyond traditional gallery spaces and into our homes, communities, and daily interactions. This post reflects on my Creative Collective workshop series and the philosophy behind making art accessible in domestic environments.",
-    "image": "images/curation-as-lifestyle.jpg",
-    "tags": ["Curation", "Community", "Home Gallery"],
+    "title": "The influence of Renaissance grottoes and cabinets on modern museums",
+    "date": "2024.5.20",
+    "category": "Museum & History",
+    "readTime": "10 min read",
+    "excerpt": "A deep dive into Renaissance collecting practices and their lasting impact on modern museums, through the lens of Isabella d'Este's grotto and cabinets of curiosity.",
+    "image": "images/blog-1.jpg",
+    "tags": ["Museum", "History", "Renaissance"],
     "featured": true,
-    "published": false,
-    "content": ""
+    "published": true,
+    "contentFile": "data/blog/blog-1.md"
   },
   {
     "id": "blog-2",
@@ -23,7 +23,7 @@
     "tags": ["Visitor Studies", "Museum", "Research"],
     "featured": false,
     "published": false,
-    "content": ""
+    "contentFile": ""
   },
   {
     "id": "blog-3",
@@ -36,7 +36,7 @@
     "tags": ["International", "Collaboration", "Cultural Exchange"],
     "featured": false,
     "published": false,
-    "content": ""
+    "contentFile": ""
   },
   {
     "id": "blog-4",
@@ -49,7 +49,7 @@
     "tags": ["Art Therapy", "Community", "Workshops"],
     "featured": false,
     "published": false,
-    "content": ""
+    "contentFile": ""
   },
   {
     "id": "blog-5",
@@ -62,7 +62,7 @@
     "tags": ["Digital Archiving", "Technology", "Documentation"],
     "featured": false,
     "published": false,
-    "content": ""
+    "contentFile": ""
   },
   {
     "id": "blog-6",
@@ -75,6 +75,6 @@
     "tags": ["Melbourne", "Arts Community", "Personal"],
     "featured": false,
     "published": false,
-    "content": ""
+    "contentFile": ""
   }
 ]

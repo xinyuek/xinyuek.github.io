@@ -40,6 +40,39 @@ class ContentLoader {
         return await response.json();
     }
 
+    async fetchMarkdown(url) {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.text();
+    }
+
+    // Simple markdown to HTML parser
+    parseMarkdown(markdown) {
+        let html = markdown;
+        
+        // Headers
+        html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+        html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+        html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+        
+        // Bold and italic
+        html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+        
+        // Paragraphs (split by double newlines)
+        html = html.split('\n\n').map(paragraph => {
+            paragraph = paragraph.trim();
+            if (paragraph.startsWith('<h') || paragraph === '') {
+                return paragraph;
+            }
+            return `<p>${paragraph.replace(/\n/g, ' ')}</p>`;
+        }).join('\n');
+        
+        return html;
+    }
+
     getCurrentPage() {
         const path = window.location.pathname;
         const filename = path.split('/').pop();
@@ -260,7 +293,10 @@ class ContentLoader {
         const blogContainer = document.getElementById('blog-container');
         if (!blogContainer) return;
 
-        blogContainer.innerHTML = this.blogData
+        // Filter only published posts
+        const publishedPosts = this.blogData.filter(post => post.published);
+
+        blogContainer.innerHTML = publishedPosts
             .map(post => `
                 <article class="blog-post ${post.featured ? 'featured' : ''}">
                     <div class="post-image">
@@ -277,10 +313,76 @@ class ContentLoader {
                         <div class="post-tags">
                             ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                         </div>
-                        <a href="#" class="read-more">Read More →</a>
+                        ${post.contentFile ? `<a href="#" class="read-more" onclick="contentLoader.openBlogPost('${post.id}')">Read More →</a>` : `<span class="read-more disabled">Coming Soon</span>`}
                     </div>
                 </article>
             `).join('');
+    }
+
+    async openBlogPost(postId) {
+        const post = this.blogData.find(p => p.id === postId);
+        if (!post || !post.contentFile) return;
+
+        try {
+            const markdownContent = await this.fetchMarkdown(post.contentFile);
+            const htmlContent = this.parseMarkdown(markdownContent);
+            
+            this.showBlogModal(post, htmlContent);
+        } catch (error) {
+            console.error('Error loading blog post:', error);
+            alert('Error loading blog post content.');
+        }
+    }
+
+    showBlogModal(post, content) {
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('blog-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'blog-modal';
+            modal.className = 'blog-modal';
+            modal.innerHTML = `
+                <div class="blog-modal-content">
+                    <div class="blog-modal-header">
+                        <button class="blog-modal-close">&times;</button>
+                    </div>
+                    <div class="blog-modal-body">
+                        <div class="blog-post-header">
+                            <div class="post-category"></div>
+                            <h1 class="post-title"></h1>
+                            <div class="post-meta">
+                                <span class="post-date"></span>
+                                <span class="post-read-time"></span>
+                            </div>
+                            <div class="post-tags"></div>
+                        </div>
+                        <div class="blog-post-content"></div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            // Add close functionality
+            modal.querySelector('.blog-modal-close').onclick = () => {
+                modal.style.display = 'none';
+            };
+            modal.onclick = (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        }
+
+        // Populate modal content
+        modal.querySelector('.post-category').textContent = post.category;
+        modal.querySelector('.post-title').textContent = post.title;
+        modal.querySelector('.post-date').textContent = post.date;
+        modal.querySelector('.post-read-time').textContent = post.readTime;
+        modal.querySelector('.post-tags').innerHTML = post.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+        modal.querySelector('.blog-post-content').innerHTML = content;
+
+        // Show modal
+        modal.style.display = 'flex';
     }
 
     getStatusLabel(status) {
@@ -306,8 +408,9 @@ class ContentLoader {
 }
 
 // Initialize content loader when DOM is ready
+let contentLoader;
 document.addEventListener('DOMContentLoaded', function() {
-    const contentLoader = new ContentLoader();
+    contentLoader = new ContentLoader();
     contentLoader.loadAllData();
 });
 
