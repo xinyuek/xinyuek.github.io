@@ -1,17 +1,19 @@
 [
   {
     "id": "event-1",
-    "title": "Sensitive Being Exhibition",
+    "title": "NextGen2025 AI Hackathon",
     "date": "August 2025",
     "location": "Melbourne, Australia",
-    "description": "Co-curating a cross-media group exhibition exploring \"emotional experience\" featuring 13 artists from different countries (Australia, China, Argentina, and the U.S.). The exhibition emphasizes the interaction between sensory perception and emotions, incorporating installations, video art, paintings, and other media.",
-    "image": "images/ex-tea.jpg",
+    "description": "Led and organized a week-long AI hackathon, bringing together 100+ participants to solve real problems proposed by 10+ enterprise partners. Designed the full program structure, including challenge workflows, team dynamics, and public showcases, and connected local developers, designers, and creative communities throughout the process.",
+    "image": "images/nextgen.png",
     "status": "upcoming",
-    "tags": ["Curatorial", "International", "Group Exhibition"],
+    "tags": ["Hackathon", "AI", "Challenge-based", "Community-driven"],
     "highlights": [
-      "13 artists from Australia, China, Argentina, and other countries",
-      "Artworks span a range of media, including installation, video, and sound",
-      "Features 8 themed workshops and 1 live performance"
+    "100+ participants from diverse backgrounds",
+    "10+ enterprise partners involved",
+    "Designed full event flow including challenge release, team matching, and final demo session",
+    "Featured interdisciplinary teams including developers, designers, and researchers",
+    "Strengthened local community connections between tech and creative sectors"
     ]
   },
   {
@@ -43,5 +45,19 @@
       "Found night visitors prefer interactive installations and social activities",
       "Provided optimization suggestions for exhibition planning and display design"
     ]
-  }
-]
+  },
+  {
+    "id": "event-4",
+    "title": "Sensitive Being Exhibition",
+    "date": "August 2025",
+    "location": "Melbourne, Australia",
+    "description": "Co-curating a cross-media group exhibition exploring \"emotional experience\" featuring 13 artists from different countries (Australia, China, Argentina, and the U.S.). The exhibition emphasizes the interaction between sensory perception and emotions, incorporating installations, video art, paintings, and other media.",
+    "image": "images/ex-tea.jpg",
+    "status": "upcoming",
+    "tags": ["Curatorial", "International", "Group Exhibition"],
+    "highlights": [
+      "13 artists from Australia, China, Argentina, and other countries",
+      "Artworks span a range of media, including installation, video, and sound",
+      "Features 8 themed workshops and 1 live performance"
+    ]
+  }]
